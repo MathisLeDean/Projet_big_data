@@ -1,0 +1,12 @@
+.cache/
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+Stock_price_extracted/
+fnspid_data/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
