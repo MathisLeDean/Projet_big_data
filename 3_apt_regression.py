@@ -63,7 +63,7 @@ def load_macro_factors() -> pd.DataFrame:
 
 def load_data():
     con = duckdb.connect(DB_PATH)
-    prices = con.execute("SELECT ticker, date, close FROM prices ORDER BY ticker, date").df()
+    prices = con.execute("SELECT ticker, date, adj_close AS close FROM prices ORDER BY ticker, date").df()
     news = con.execute("""
         SELECT ticker, date, sentiment_score
         FROM news
@@ -170,8 +170,9 @@ def main():
 
     print(f"\n{len(results)} entreprises avec une régression valide.\n")
     print("--- Classement par beta_sentiment (sur-réaction au sentiment médiatique) ---")
-    pd.set_option("display.width", 160)
+    pd.set_option("display.width", 200)
     pd.set_option("display.max_rows", None)
+    pd.set_option("display.max_columns", None)
     print(results[[
         "ticker", "beta_sentiment", "pval_sentiment",
         "beta_marche", "pval_marche",

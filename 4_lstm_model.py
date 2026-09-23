@@ -31,7 +31,7 @@ BATCH_SIZE = 64
 def load_panel() -> pd.DataFrame:
     """Reconstruit le même panel (rendement, marché, sentiment) que pour l'APT."""
     con = duckdb.connect(DB_PATH)
-    prices = con.execute("SELECT ticker, date, close FROM prices ORDER BY ticker, date").df()
+    prices = con.execute("SELECT ticker, date, adj_close AS close FROM prices ORDER BY ticker, date").df()
     news = con.execute("""
         SELECT ticker, date, sentiment_score FROM news WHERE sentiment_score IS NOT NULL
     """).df()
