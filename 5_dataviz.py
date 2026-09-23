@@ -51,7 +51,7 @@ def fig_beta_ranking(apt: pd.DataFrame):
     ax.barh(data["ticker"], data["beta_sentiment"], color=colors)
     ax.axvline(0, color="black", linewidth=0.8)
     ax.set_xlabel("Beta sentiment (sur-réaction au climat médiatique)")
-    ax.set_title("Classement des 44 entreprises par sensibilité au sentiment de presse")
+    ax.set_title("Classement des entreprises par sensibilité au sentiment de presse")
     fig.tight_layout()
     savefig(fig, "1_classement_beta_sentiment.png")
 
@@ -90,7 +90,7 @@ def fig_tesla_sentiment_vs_price(con):
     ax2.tick_params(axis="y", labelcolor=POS)
 
     fig.legend(loc="upper left", bbox_to_anchor=(0.08, 0.92))
-    ax1.set_title("Tesla : cours de clôture et sentiment médiatique (2018-2023)")
+    ax1.set_title("Tesla : cours de clôture et sentiment médiatique (2018-2020)")
     fig.tight_layout()
     savefig(fig, "2_tesla_sentiment_vs_prix.png")
 

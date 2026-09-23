@@ -20,7 +20,7 @@ import yfinance as yf
 
 DB_PATH = "fnspid.duckdb"
 START_DATE = "2018-01-01"
-END_DATE = "2023-12-31"
+END_DATE = "2020-06-30"
 
 
 def main():
