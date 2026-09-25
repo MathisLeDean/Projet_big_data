@@ -6,11 +6,8 @@ Création de la base de données à partir des CSV.
 DuckDB : base de données analytique EMBARQUÉE. Pas de serveur, pas de
 conteneur Docker à lancer -- le fichier fnspid.duckdb EST la base, comme
 avec SQLite, mais le moteur est optimisé pour les requêtes analytiques
-(jointures, agrégations, GROUP BY) qu'on fera en partie 2 et 3, ce que
-SQLite fait plus lentement.
+(jointures, agrégations, GROUP BY)
 
-Prérequis :
-    pip install duckdb
 """
 
 import duckdb

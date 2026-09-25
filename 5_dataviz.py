@@ -4,8 +4,6 @@
 Génère les 5 visualisations finales du projet, en PNG haute résolution,
 prêtes à être insérées dans le support de soutenance.
 
-Prérequis :
-    pip install duckdb pandas matplotlib
 """
 
 import os

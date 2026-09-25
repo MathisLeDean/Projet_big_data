@@ -8,8 +8,6 @@ précédents (rendement, rendement du marché, sentiment).
 
 Découpage chronologique strict train/test (pas de mélange temporel).
 
-Prérequis :
-    pip install duckdb pandas torch scikit-learn
 """
 
 import duckdb

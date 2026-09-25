@@ -1,5 +1,5 @@
 """
-5_random_forest.py
+4_1_random_forest.py
 
 Entraîne un modèle Random Forest et le compare à la régression linéaire naïve.
 Vise à vérifier si un algorithme non-linéaire basé sur des arbres peut extraire

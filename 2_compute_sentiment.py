@@ -11,8 +11,6 @@ et continu, plus facile à utiliser dans une régression ensuite :
 
     sentiment_score = P(positive) - P(negative)   (compris entre -1 et +1)
 
-Prérequis :
-    pip install transformers torch duckdb tqdm
 """
 
 import duckdb

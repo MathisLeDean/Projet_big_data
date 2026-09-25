@@ -10,8 +10,6 @@ APT (multi-facteurs) par entreprise :
 beta_sentiment(i) est l'indicateur clé : plus il est élevé (en valeur absolue),
 plus l'entreprise i sur-réagit au climat médiatique par rapport à la moyenne.
 
-Prérequis :
-    pip install duckdb pandas statsmodels
 """
 
 import duckdb
