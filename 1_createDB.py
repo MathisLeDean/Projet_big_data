@@ -1,7 +1,7 @@
 """
 1_createDB.py
 
-Création de la base de données à partir des CSV générés par explore_fnspid.py.
+Création de la base de données à partir des CSV.
 
 DuckDB : base de données analytique EMBARQUÉE. Pas de serveur, pas de
 conteneur Docker à lancer -- le fichier fnspid.duckdb EST la base, comme
